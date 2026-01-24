@@ -1,0 +1,390 @@
+{
+    "blades": [
+        {
+            "id": 1,
+            "name": "Dransword",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 55,
+                "defense": 25,
+                "endurance": 20
+            },
+            "weight": 34.8
+        },
+        {
+            "id": 2,
+            "name": "Hell Scythe",
+            "description": "Right Spin Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 30,
+                "defense": 35,
+                "endurance": 35
+            },
+            "weight": 32.7
+        },
+        {
+            "id": 3,
+            "name": "Wizard Arrow",
+            "description": "Right Spin Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 15,
+                "defense": 30,
+                "endurance": 55
+            },
+            "weight": 32.0
+        },
+        {
+            "id": 4,
+            "name": "Knight Shield",
+            "description": "Right Spin Defense Type",
+            "type": "Defense",
+            "stats": {
+                "attack": 20,
+                "defense": 55,
+                "endurance": 25
+            },
+            "weight": 32.3
+        },
+        {
+            "id": 5,
+            "name": "Dranzer Spiral",
+            "description": "Right Spin Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 35,
+                "defense": 30,
+                "endurance": 35
+            },
+            "weight": 27.8
+        },
+        {
+            "id": 6,
+            "name": "Cobalt Drake",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 70,
+                "defense": 35,
+                "endurance": 25
+            },
+            "weight": 38.0
+        },
+        {
+            "id": 7,
+            "name": "Knight Lance",
+            "description": "Right Spin Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 25,
+                "defense": 60,
+                "endurance": 15
+            },
+            "weight": 32.9
+        },
+        {
+            "id": 8,
+            "name": "Shark Edge",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 60,
+                "defense": 25,
+                "endurance": 25
+            },
+            "weight": 34.6
+        },
+        {
+            "id": 9,
+            "name": "Leon Claw",
+            "description": "Right Spin Balance Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 40,
+                "defense": 40,
+                "endurance": 20
+            },
+            "weight": 31.5
+        },
+        {
+            "id": 10,
+            "name": "Viper Tail",
+            "description": "Right Spin Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 30,
+                "defense": 20,
+                "endurance": 50
+            },
+            "weight": 34.6
+        },
+        {
+            "id": 11,
+            "name": "Rhino Horn",
+            "description": "Right Spin Defense Type",
+            "type": "Defense",
+            "stats": {
+                "attack": 20,
+                "defense": 50,
+                "endurance": 30
+            },
+            "weight": 32.5
+        },
+        {
+            "id": 12,
+            "name": "Dran Dagger",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 50,
+                "defense": 25,
+                "endurance": 25
+            },
+            "weight": 34.7
+        },
+        {
+            "id": 13,
+            "name": "Hell's Chain",
+            "description": "Right Spin Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 35,
+                "defense": 40,
+                "endurance": 20
+            },
+            "weight": 33.2
+        }
+    ],
+    "ratchets": [
+        {
+            "id": 1,
+            "name": "3-60",
+            "description": "A part that sets the bay low. Adopts 3 blades with high repelling performance.",
+            "stats": {
+                "attack": 15,
+                "defense": 9,
+                "endurance": 6
+            },
+            "height": 60,
+            "weight": 6.3
+        },
+        {
+            "id": 2,
+            "name": "4-60",
+            "description": "A part that sets the bay low. It has 4 blades that make it easy to dodge attacks.",
+            "stats": {
+                "attack": 11,
+                "defense": 13,
+                "endurance": 6
+            },
+            "height": 60,
+            "weight": 6.3
+        },
+        {
+            "id": 3,
+            "name": "4-80",
+            "description": "A part that sets the bay high. It uses 4 blades that make it easy to dodge attacks.",
+            "stats": {
+                "attack": 11,
+                "defense": 11,
+                "endurance": 8
+            },
+            "height": 80,
+            "weight": 6.9
+        },
+        {
+            "id": 4,
+            "name": "3-80",
+            "description": "Parts that set the bay higher. Adopts 3 blades with high repelling performance.",
+            "stats": {
+                "attack": 15,
+                "defense": 7,
+                "endurance": 8
+            },
+            "height": 80,
+            "weight": 6.9
+        },
+        {
+            "id": 5,
+            "name": "5-60",
+            "description": "A part that sets the bay low. Adopts a thick 5-blade with excellent centrifugal force.",
+            "stats": {
+                "attack": 12,
+                "defense": 9,
+                "endurance": 9
+            },
+            "height": 60,
+            "weight": 6.5
+        },
+        {
+            "id": 6,
+            "name": "5-80",
+            "description": "A part that sets the bay higher. Adopts a thick 5-blade with excellent centrifugal force.",
+            "stats": {
+                "attack": 12,
+                "defense": 8,
+                "endurance": 10
+            },
+            "height": 80,
+            "weight": 7.1
+        }
+    ],
+    "bits": [
+        {
+            "id": 1,
+            "name": "F (Flat)",
+            "description": "Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 40,
+                "defense": 15,
+                "endurance": 10,
+                "dash": 35,
+                "burst_resistance": 80
+            },
+            "weight": 2.2
+        },
+        {
+            "id": 2,
+            "name": "T (Taper)",
+            "description": "Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 35,
+                "defense": 20,
+                "endurance": 20,
+                "dash": 25,
+                "burst_resistance": 80
+            },
+            "weight": 2.2
+        },
+        {
+            "id": 3,
+            "name": "B (Ball)",
+            "description": "Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 15,
+                "defense": 25,
+                "endurance": 50,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 2.1
+        },
+        {
+            "id": 4,
+            "name": "N (Needle)",
+            "description": "Defense Type",
+            "type": "Defense",
+            "stats": {
+                "attack": 10,
+                "defense": 50,
+                "endurance": 30,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 2.0
+        },
+        {
+            "id": 5,
+            "name": "HN (High Needle)",
+            "description": "Defense Type",
+            "type": "Defense",
+            "stats": {
+                "attack": 15,
+                "defense": 55,
+                "endurance": 20,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 2.2
+        },
+        {
+            "id": 6,
+            "name": "LF (Low Flat)",
+            "description": "Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 45,
+                "defense": 5,
+                "endurance": 10,
+                "dash": 40,
+                "burst_resistance": 80
+            },
+            "weight": 2.2
+        },
+        {
+            "id": 7,
+            "name": "P (Point)",
+            "description": "Balance Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 25,
+                "defense": 25,
+                "endurance": 25,
+                "dash": 25,
+                "burst_resistance": 80
+            },
+            "weight": 2.2
+        },
+        {
+            "id": 8,
+            "name": "O (Orb)",
+            "description": "Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 10,
+                "defense": 10,
+                "endurance": 50,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 2.0
+        },
+        {
+            "id": 9,
+            "name": "S (Spike)",
+            "description": "Defense Type",
+            "type": "Defense",
+            "stats": {
+                "attack": 10,
+                "defense": 45,
+                "endurance": 35,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 2.0
+        },
+        {
+            "id": 10,
+            "name": "R (Rush)",
+            "description": "Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 40,
+                "defense": 10,
+                "endurance": 20,
+                "dash": 30,
+                "burst_resistance": 80
+            },
+            "weight": 2.0
+        },
+        {
+            "id": 11,
+            "name": "HT (High Taper)",
+            "description": "Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 30,
+                "defense": 25,
+                "endurance": 20,
+                "dash": 25,
+                "burst_resistance": 80
+            },
+            "weight": 2.3
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade X - Parts Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo-area">
+                <h1>BEYBLADE <span class="x-mark">X</span></h1>
+                <p>CUSTOMIZE & CALCULATE</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="builder-section">
+                <!-- Blade Selection -->
+                <div class="part-selector" id="blade-section">
+                    <label for="blade-select">BLADE</label>
+                    <select id="blade-select">
+                        <option value="" disabled selected>Select Blade</option>
+                    </select>
+                    <div class="part-preview" id="blade-preview">
+                        <img id="blade-image" class="part-image" src="" alt="" style="display: none;">
+                        <div class="part-info">
+                            <span class="placeholder-text">No Blade Selected</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ratchet Selection -->
+                <div class="part-selector" id="ratchet-section">
+                    <label for="ratchet-select">RATCHET</label>
+                    <select id="ratchet-select">
+                        <option value="" disabled selected>Select Ratchet</option>
+                    </select>
+                    <div class="part-preview" id="ratchet-preview">
+                        <img id="ratchet-image" class="part-image" src="" alt="" style="display: none;">
+                        <div class="part-info">
+                            <span class="placeholder-text">No Ratchet Selected</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bit Selection -->
+                <div class="part-selector" id="bit-section">
+                    <label for="bit-select">BIT</label>
+                    <select id="bit-select">
+                        <option value="" disabled selected>Select Bit</option>
+                    </select>
+                    <div class="part-preview" id="bit-preview">
+                        <img id="bit-image" class="part-image" src="" alt="" style="display: none;">
+                        <div class="part-info">
+                            <span class="placeholder-text">No Bit Selected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-dashboard">
+                <h2 id="combination-name">COMBINATION STATS</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">ATTACK</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="bar-attack" style="width: 0%"></div>
+                        </div>
+                        <span class="stat-value" id="val-attack">0</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-label">DEFENSE</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="bar-defense" style="width: 0%"></div>
+                        </div>
+                        <span class="stat-value" id="val-defense">0</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-label">ENDURANCE</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="bar-endurance" style="width: 0%"></div>
+                        </div>
+                        <span class="stat-value" id="val-endurance">0</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-label">DASH</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="bar-dash" style="width: 0%"></div>
+                        </div>
+                        <span class="stat-value" id="val-dash">0</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-label">BURST RES.</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="bar-burst" style="width: 0%"></div>
+                        </div>
+                        <span class="stat-value" id="val-burst">0</span>
+                    </div>
+
+                    <div class="stat-card highlight">
+                        <span class="stat-label">WEIGHT</span>
+                        <span class="stat-value big" id="val-weight">0g</span>
+                    </div>
+                </div>
+                <div class="stats-actions">
+                    <button id="btn-compare" class="action-button" disabled>
+                        ADD TO COMPARE <span class="btn-icon">+</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Comparison Table Section -->
+            <!-- Comparison Table Section -->
+            <div class="comparison-dashboard" id="comparison-section" style="display: none;">
+                <div class="comparison-header">
+                    <h3>COMBINATION COMPARISON</h3>
+                    <div class="view-toggles">
+                        <button id="view-table" class="view-btn active">TABLE</button>
+                        <button id="view-chart" class="view-btn">CHART</button>
+                    </div>
+                </div>
+
+                <div id="table-view" class="table-container">
+                    <table id="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>COMBINATION</th>
+                                <th>ATK</th>
+                                <th>DEF</th>
+                                <th>END</th>
+                                <th>DASH</th>
+                                <th>BURST</th>
+                                <th>WGT</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparison-body">
+                            <!-- Rows will be added here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="chart-view" class="chart-container" style="display: none;">
+                    <canvas id="comparison-chart"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="status-line">SYSTEM READY</div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

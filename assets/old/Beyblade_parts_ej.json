@@ -1,0 +1,43 @@
+{
+    "blades": [
+        {
+            "id": 1,
+            "name": "Dransword",
+            "type": "Attack",
+            "stats": {
+                "attack": 55,
+                "defense": 25,
+                "endurance": 20
+            },
+            "weight": 12.5
+        }
+    ],
+    "ratchets": [
+        {
+            "id": 1,
+            "name": "3-60",
+            "stats": {
+                "attack": 15,
+                "defense": 9,
+                "endurance": 6
+            },
+            "height": 60,
+            "weight": 12.5
+        }
+    ],
+    "bits": [
+        {
+            "id": 1,
+            "name": "F (Flat)",
+            "type": "Attack",
+            "stats": {
+                "attack": 40,
+                "defense": 15,
+                "endurance": 10,
+                "dash": 35,
+                "burst_resistance": 80
+            },
+            "weight": 2.2
+        }
+    ]
+}
