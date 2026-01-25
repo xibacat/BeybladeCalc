@@ -168,6 +168,58 @@
             },
             "weight": 33.2,
             "image": "assets/img/blades/hellschain.png"
+        },
+        {
+            "id": 14,
+            "name": "Wand Wizard",
+            "description": "Right Spin Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 15,
+                "defense": 25,
+                "endurance": 60
+            },
+            "weight": 35.8,
+            "image": "assets/img/blades/wandwizard.png"
+        },
+        {
+            "id": 15,
+            "name":"Tusk Mammouth",
+            "description":"Right Spin Defense Type",
+            "type":"Balance",
+            "stats":{
+                "attack":33,
+                "defense":35,
+                "endurance":32
+            },
+            "weight":32.5,
+            "image":"assets/img/blades/tuskmammouth.png"
+        },
+        {
+            "id":16,
+            "name":"Reaper Incendio",
+            "description":"Right Spin Attack Type",
+            "type":"Attack",
+            "stats":{
+                "attack":40,
+                "defense":20,
+                "endurance":40
+            },
+            "weight":34.7,
+            "image":"assets/img/blades/reaperincendio.webp"
+        },
+        {
+            "id":17,
+            "name":"Buster Dran",
+            "description":"Right Spin Attack Type",
+            "type":"Attack",
+            "stats":{
+                "attack":70,
+                "defense":20,
+                "endurance":10
+            },
+            "weight":34.7,
+            "image":"assets/img/blades/busterdran.png"
         }
     ],
     "ratchets": [
