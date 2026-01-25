@@ -11,7 +11,8 @@
                 "endurance": 20
             },
             "weight": 34.8,
-            "image": "assets/img/blades/DranSword.png"
+            "image": "assets/img/blades/DranSword.png",
+            "owned": false
         },
         {
             "id": 2,
@@ -24,7 +25,8 @@
                 "endurance": 35
             },
             "weight": 32.7,
-            "image": "assets/img/blades/Hellscythe.png"
+            "image": "assets/img/blades/Hellscythe.png",
+            "owned": false
         },
         {
             "id": 3,
@@ -36,8 +38,9 @@
                 "defense": 30,
                 "endurance": 55
             },
-            "weight": 32.0,
-            "image": "assets/img/blades/wizardArrow.png"
+            "weight": 32,
+            "image": "assets/img/blades/wizardArrow.png",
+            "owned": false
         },
         {
             "id": 4,
@@ -50,7 +53,8 @@
                 "endurance": 25
             },
             "weight": 32.3,
-            "image": "assets/img/blades/knightshield.png"
+            "image": "assets/img/blades/knightshield.png",
+            "owned": false
         },
         {
             "id": 5,
@@ -63,7 +67,8 @@
                 "endurance": 35
             },
             "weight": 27.8,
-            "image": "assets/img/blades/dranzerspiral.png"
+            "image": "assets/img/blades/dranzerspiral.png",
+            "owned": false
         },
         {
             "id": 6,
@@ -75,8 +80,9 @@
                 "defense": 35,
                 "endurance": 25
             },
-            "weight": 38.0,
-            "image": "assets/img/blades/cobaltdrake.png"
+            "weight": 38,
+            "image": "assets/img/blades/cobaltdrake.png",
+            "owned": false
         },
         {
             "id": 7,
@@ -89,7 +95,8 @@
                 "endurance": 15
             },
             "weight": 32.9,
-            "image": "assets/img/blades/khightlance.png"
+            "image": "assets/img/blades/khightlance.png",
+            "owned": false
         },
         {
             "id": 8,
@@ -102,7 +109,8 @@
                 "endurance": 25
             },
             "weight": 34.6,
-            "image": "assets/img/blades/sharkedge.png"
+            "image": "assets/img/blades/sharkedge.png",
+            "owned": false
         },
         {
             "id": 9,
@@ -115,7 +123,8 @@
                 "endurance": 20
             },
             "weight": 31.5,
-            "image": "assets/img/blades/leonclaw.png"
+            "image": "assets/img/blades/leonclaw.png",
+            "owned": false
         },
         {
             "id": 10,
@@ -128,7 +137,8 @@
                 "endurance": 50
             },
             "weight": 34.6,
-            "image": "assets/img/blades/vipertail.png"
+            "image": "assets/img/blades/vipertail.png",
+            "owned": false
         },
         {
             "id": 11,
@@ -141,7 +151,8 @@
                 "endurance": 30
             },
             "weight": 32.5,
-            "image": "assets/img/blades/rhinohorn.png"
+            "image": "assets/img/blades/rhinohorn.png",
+            "owned": false
         },
         {
             "id": 12,
@@ -154,7 +165,8 @@
                 "endurance": 25
             },
             "weight": 34.7,
-            "image": "assets/img/blades/drandagger.png"
+            "image": "assets/img/blades/drandagger.png",
+            "owned": true
         },
         {
             "id": 13,
@@ -167,7 +179,8 @@
                 "endurance": 20
             },
             "weight": 33.2,
-            "image": "assets/img/blades/hellschain.png"
+            "image": "assets/img/blades/hellschain.png",
+            "owned": false
         },
         {
             "id": 14,
@@ -180,46 +193,64 @@
                 "endurance": 60
             },
             "weight": 35.8,
-            "image": "assets/img/blades/wandwizard.png"
+            "image": "assets/img/blades/wandwizard.png",
+            "owned": true
         },
         {
             "id": 15,
-            "name":"Tusk Mammouth",
-            "description":"Right Spin Defense Type",
-            "type":"Balance",
-            "stats":{
-                "attack":33,
-                "defense":35,
-                "endurance":32
+            "name": "Tusk Mammouth",
+            "description": "Right Spin Balance Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 33,
+                "defense": 35,
+                "endurance": 32
             },
-            "weight":32.5,
-            "image":"assets/img/blades/tuskmammouth.png"
+            "weight": 32.5,
+            "image": "assets/img/blades/tuskmammouth.png",
+            "owned": true
         },
         {
-            "id":16,
-            "name":"Reaper Incendio",
-            "description":"Right Spin Attack Type",
-            "type":"Attack",
-            "stats":{
-                "attack":40,
-                "defense":20,
-                "endurance":40
+            "id": 16,
+            "name": "Reaper Incendio",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 40,
+                "defense": 20,
+                "endurance": 40
             },
-            "weight":34.7,
-            "image":"assets/img/blades/reaperincendio.webp"
+            "weight": 34.7,
+            "image": "assets/img/blades/reaperincendio.png",
+            "owned": true
         },
         {
-            "id":17,
-            "name":"Buster Dran",
-            "description":"Right Spin Attack Type",
-            "type":"Attack",
-            "stats":{
-                "attack":70,
-                "defense":20,
-                "endurance":10
+            "id": 17,
+            "name": "Buster Dran",
+            "description": "Right Spin Attack Type",
+            "type": "Attack",
+            "stats": {
+                "attack": 70,
+                "defense": 20,
+                "endurance": 10
             },
-            "weight":34.7,
-            "image":"assets/img/blades/busterdran.png"
+            "weight": 34.7,
+            "image": "assets/img/blades/busterdran.png",
+            "owned": true
+        },
+        {
+            "id": 18,
+            "name": "Arc Wizard ",
+            "description": "Right Spin Stamina Type. Centrifugal force focus.",
+            "type": "Stamina",
+            "stats": {
+                "attack": 20,
+                "defense": 20,
+                "endurance": 60
+            },
+            "weight": 36.0,
+            "image": "assets/img/blades/arcwizard.png",
+            "owned": true
         }
     ],
     "ratchets": [
@@ -234,7 +265,8 @@
             },
             "height": 60,
             "weight": 6.3,
-            "image": "assets/img/ratchets/3-60.png"
+            "image": "assets/img/ratchets/3-60.png",
+            "owned": true
         },
         {
             "id": 2,
@@ -247,7 +279,8 @@
             },
             "height": 60,
             "weight": 6.3,
-            "image": "assets/img/ratchets/4-60.png"
+            "image": "assets/img/ratchets/4-60.png",
+            "owned": true
         },
         {
             "id": 3,
@@ -260,7 +293,8 @@
             },
             "height": 80,
             "weight": 6.9,
-            "image": "assets/img/ratchets/4-80.png"
+            "image": "assets/img/ratchets/4-80.png",
+            "owned": false
         },
         {
             "id": 4,
@@ -273,7 +307,8 @@
             },
             "height": 80,
             "weight": 6.9,
-            "image": "assets/img/ratchets/3-80.png"
+            "image": "assets/img/ratchets/3-80.png",
+            "owned": false
         },
         {
             "id": 5,
@@ -286,7 +321,8 @@
             },
             "height": 60,
             "weight": 6.5,
-            "image": "assets/img/ratchets/5-60.png"
+            "image": "assets/img/ratchets/5-60.png",
+            "owned": false
         },
         {
             "id": 6,
@@ -299,7 +335,50 @@
             },
             "height": 80,
             "weight": 7.1,
-            "image": "assets/img/ratchets/5-80.png"
+            "image": "assets/img/ratchets/5-80.png",
+            "owned": false
+        },
+        {
+            "id": 7,
+            "name": "4-55",
+            "description": "Lowest height ratchet with 4 blades for upper attacks.",
+            "stats": {
+                "attack": 7,
+                "defense": 11,
+                "endurance": 12
+            },
+            "height": 55,
+            "weight": 4.8,
+            "image": "assets/img/ratchets/4-55.webp",
+            "owned": true
+        },
+        {
+            "id": 8,
+            "name": "5-70",
+            "description": "Balanced 5-blade ratchet with middle height for stability.",
+            "stats": {
+                "attack": 12,
+                "defense": 8.5,
+                "endurance": 9.5
+            },
+            "height": 70,
+            "weight": 6.6,
+            "image": "assets/img/ratchets/5-70.png",
+            "owned": true
+        },
+        {
+            "id": 9,
+            "name": "4-70",
+            "description": "Middle height ratchet with 4 blades.",
+            "stats": {
+                "attack": 11,
+                "defense": 12,
+                "endurance": 7
+            },
+            "height": 70,
+            "weight": 6.5,
+            "image": "assets/img/ratchets/4-70.png",
+            "owned": true
         }
     ],
     "bits": [
@@ -316,7 +395,8 @@
                 "burst_resistance": 80
             },
             "weight": 2.2,
-            "image": "assets/img/bits/flat.png"
+            "image": "assets/img/bits/flat.png",
+            "owned": false
         },
         {
             "id": 2,
@@ -331,7 +411,8 @@
                 "burst_resistance": 80
             },
             "weight": 2.2,
-            "image": "assets/img/bits/taper.png"
+            "image": "assets/img/bits/taper.png",
+            "owned": true
         },
         {
             "id": 3,
@@ -346,7 +427,8 @@
                 "burst_resistance": 30
             },
             "weight": 2.1,
-            "image": "assets/img/bits/ball.png"
+            "image": "assets/img/bits/ball.png",
+            "owned": false
         },
         {
             "id": 4,
@@ -360,8 +442,9 @@
                 "dash": 10,
                 "burst_resistance": 30
             },
-            "weight": 2.0,
-            "image": "assets/img/bits/needle.png"
+            "weight": 2,
+            "image": "assets/img/bits/needle.png",
+            "owned": false
         },
         {
             "id": 5,
@@ -376,7 +459,8 @@
                 "burst_resistance": 30
             },
             "weight": 2.2,
-            "image": "assets/img/bits/highneedle.png"
+            "image": "assets/img/bits/highneedle.png",
+            "owned": false
         },
         {
             "id": 6,
@@ -391,7 +475,8 @@
                 "burst_resistance": 80
             },
             "weight": 2.2,
-            "image": "assets/img/bits/lowflat.png"
+            "image": "assets/img/bits/lowflat.png",
+            "owned": false
         },
         {
             "id": 7,
@@ -406,7 +491,8 @@
                 "burst_resistance": 80
             },
             "weight": 2.2,
-            "image": "assets/img/bits/point.png"
+            "image": "assets/img/bits/point.png",
+            "owned": false
         },
         {
             "id": 8,
@@ -420,8 +506,9 @@
                 "dash": 10,
                 "burst_resistance": 30
             },
-            "weight": 2.0,
-            "image": "assets/img/bits/orb.png"
+            "weight": 2,
+            "image": "assets/img/bits/orb.png",
+            "owned": false
         },
         {
             "id": 9,
@@ -435,8 +522,9 @@
                 "dash": 10,
                 "burst_resistance": 30
             },
-            "weight": 2.0,
-            "image": "assets/img/bits/spike.png"
+            "weight": 2,
+            "image": "assets/img/bits/spike.png",
+            "owned": false
         },
         {
             "id": 10,
@@ -450,8 +538,9 @@
                 "dash": 30,
                 "burst_resistance": 80
             },
-            "weight": 2.0,
-            "image": "assets/img/bits/rush.png"
+            "weight": 2,
+            "image": "assets/img/bits/rush.png",
+            "owned": true
         },
         {
             "id": 11,
@@ -466,7 +555,56 @@
                 "burst_resistance": 80
             },
             "weight": 2.3,
-            "image": "assets/img/bits/hightaper.png"
+            "image": "assets/img/bits/hightaper.png",
+            "owned": false
+        },
+        {
+            "id": 12,
+            "name": "DB (Disc Ball)",
+            "description": "Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 15,
+                "defense": 20,
+                "endurance": 55,
+                "dash": 10,
+                "burst_resistance": 30
+            },
+            "weight": 3.2,
+            "image": "assets/img/bits/discball.png",
+            "owned": true
+        },
+        {
+            "id": 13,
+            "name": "K (Kick)",
+            "description": "Balanced Type",
+            "type": "Balance",
+            "stats": {
+                "attack": 35,
+                "defense": 25,
+                "endurance": 15,
+                "dash": 25,
+                "burst_resistance": 80
+            },
+            "weight": 2.2,
+            "image": "assets/img/bits/kick.png",
+            "owned": true
+        },
+        {
+            "id": 14,
+            "name": "LO (Low Orb)",
+            "description": "Stamina Type",
+            "type": "Stamina",
+            "stats": {
+                "attack": 5,
+                "defense": 25,
+                "endurance": 55,
+                "dash": 15,
+                "burst_resistance": 30
+            },
+            "weight": 2.2,
+            "image": "assets/img/bits/loworb.png",
+            "owned": true
         }
     ]
 }

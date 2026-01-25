@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const comparisonSection = document.getElementById('comparison-section');
     const comparisonBody = document.getElementById('comparison-body');
 
+    // Filter Elements
+    const ownedFilter = document.getElementById('owned-filter');
+
     // View Elements
     const viewTableBtn = document.getElementById('view-table');
     const viewChartBtn = document.getElementById('view-chart');
@@ -56,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
         bit: null
     };
 
+    let showOwnedOnly = false;
+
     // Max values for bars (estimated based on potential max sums)
     // Blade ~60, Ratchet ~15, Bit ~45 => Total ~120? Let's verify.
     // Burst Res is high on bits (80).
@@ -80,14 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function initializeSelects() {
-        populateSelect(bladeSelect, partsData.blades);
-        populateSelect(ratchetSelect, partsData.ratchets);
-        populateSelect(bitSelect, partsData.bits);
+        refreshSelects();
 
         // Event Listeners
         bladeSelect.addEventListener('change', (e) => handleSelection('blade', e.target.value));
         ratchetSelect.addEventListener('change', (e) => handleSelection('ratchet', e.target.value));
         bitSelect.addEventListener('change', (e) => handleSelection('bit', e.target.value));
+
+        // Filter Listener
+        ownedFilter.addEventListener('change', (e) => {
+            showOwnedOnly = e.target.checked;
+            refreshSelects();
+        });
 
         // Comparison Event Listener
         btnCompare.addEventListener('click', addToComparison);
@@ -99,7 +108,55 @@ document.addEventListener('DOMContentLoaded', () => {
         initializeChart();
     }
 
-    function populateSelect(selectElement, items) {
+    function refreshSelects() {
+        // Save current values to try and preserve selection
+        const currentBlade = bladeSelect.value;
+        const currentRatchet = ratchetSelect.value;
+        const currentBit = bitSelect.value;
+
+        const filteredBlades = showOwnedOnly ? partsData.blades.filter(p => p.owned) : partsData.blades;
+        const filteredRatchets = showOwnedOnly ? partsData.ratchets.filter(p => p.owned) : partsData.ratchets;
+        const filteredBits = showOwnedOnly ? partsData.bits.filter(p => p.owned) : partsData.bits;
+
+        populateSelect(bladeSelect, filteredBlades, "Select Blade");
+        populateSelect(ratchetSelect, filteredRatchets, "Select Ratchet");
+        populateSelect(bitSelect, filteredBits, "Select Bit");
+
+        // Restore or reset
+        if (currentBlade && filteredBlades.some(p => p.id == currentBlade)) {
+            bladeSelect.value = currentBlade;
+        } else {
+            bladeSelect.value = "";
+            handleSelection('blade', ""); // Reset preview if item is gone
+        }
+
+        if (currentRatchet && filteredRatchets.some(p => p.id == currentRatchet)) {
+            ratchetSelect.value = currentRatchet;
+        } else {
+            ratchetSelect.value = "";
+            handleSelection('ratchet', "");
+        }
+
+        if (currentBit && filteredBits.some(p => p.id == currentBit)) {
+            bitSelect.value = currentBit;
+        } else {
+            bitSelect.value = "";
+            handleSelection('bit', "");
+        }
+    }
+
+    function populateSelect(selectElement, items, defaultText) {
+        // Clear existing
+        selectElement.innerHTML = '';
+
+        // Add default option
+        const defaultOption = document.createElement('option');
+        defaultOption.value = "";
+        defaultOption.textContent = defaultText;
+        defaultOption.disabled = true;
+        defaultOption.selected = true;
+        selectElement.appendChild(defaultOption);
+
         items.forEach(item => {
             const option = document.createElement('option');
             option.value = item.id;
