@@ -2,7 +2,7 @@
     "blades": [
         {
             "id": 1,
-            "name": "Dransword",
+            "name": "Sword Dran",
             "description": "Right Spin Attack Type",
             "type": "Attack",
             "stats": {
@@ -156,7 +156,7 @@
         },
         {
             "id": 12,
-            "name": "Dran Dagger",
+            "name": "Dagger Dran",
             "description": "Right Spin Attack Type",
             "type": "Attack",
             "stats": {
