@@ -454,4 +454,17 @@ document.addEventListener('DOMContentLoaded', () => {
             viewTableBtn.classList.remove('active');
         }
     }
+
+    // Modal Handling
+    const welcomeModal = document.getElementById('welcome-modal');
+    const btnEnter = document.getElementById('btn-enter');
+
+    if (btnEnter) {
+        btnEnter.addEventListener('click', () => {
+            welcomeModal.style.animation = 'fadeOut 0.5s ease-out forwards';
+            setTimeout(() => {
+                welcomeModal.style.display = 'none';
+            }, 500);
+        });
+    }
 });
