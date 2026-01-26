@@ -658,3 +658,33 @@ input:checked + .slider:before {
     to { opacity: 0; }
 }
 
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 1.5rem;
+        width: 90%;
+        /* Use fixed pixel cuts for better control on small screens */
+        clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+    }
+    
+    .modal-title {
+        font-size: 1.5rem; /* Smaller title */
+        margin-bottom: 1rem;
+    }
+    
+    .modal-message {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .highlight-x {
+        font-size: 1.0rem;
+    }
+
+    .enter-button {
+        font-size: 1rem;
+        padding: 10px 25px;
+        width: 100%; /* Full width button on mobile looks good */
+    }
+}
+
